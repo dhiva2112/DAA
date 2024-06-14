@@ -1,0 +1,16 @@
+6. Write a program for to copy one string to another using recursion
+
+def string_copy(source, destination, index=0):
+    if index == len(source):
+        destination.append('\0')
+        return
+    destination.append(source[index])
+    string_copy(source, destination, index + 1)
+
+source = "Hello, World!"
+destination = []
+string_copy(source, destination)
+destination_str = ''.join(destination).rstrip('\0')
+
+print(f"Source String: {source}")
+print(f"Copied String: {destination_str}")

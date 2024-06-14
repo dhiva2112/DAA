@@ -1,0 +1,7 @@
+1. Write a program to Print Fibonacci Series using recursion.
+
+fib = lambda n: n if n <= 1 else fib(n-1) + fib(n-2)
+n = 10 
+print ("Fibonacci Series:")
+for i in range(n):
+    print(fib(i), end=" ")

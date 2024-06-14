@@ -1,0 +1,5 @@
+4. Write a program to get the largest element of an array.
+
+arr = [3, 7, 2, 9, 5]
+max_val = max(arr)
+print("Largest element in the array:", max_val)
